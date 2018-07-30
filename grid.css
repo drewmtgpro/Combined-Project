@@ -1,0 +1,95 @@
+#grid {
+	display: grid;
+	grid-template-columns: repeat(20,1fr);
+	grid-template-rows: repeat(12,100px);
+}
+
+#title {
+	grid-row: 1/3;
+	grid-column: 7/15;
+	align-self: flex-start;
+	justify-self: center;
+}
+
+
+#slogan {
+	grid-row: 1/3;
+	grid-column: 9/13;
+	align-self: flex-end;
+	justify-self: center;
+}
+
+#gray-background-one {
+	grid-row: 1/6;
+	grid-column: 1/-1;
+}
+
+#gray-background-two {
+	grid-row: 1/-1;
+	grid-column: 1/10;
+
+}
+
+#gray-background-three {
+	grid-row: 3/12;
+	grid-column: 6/17;
+
+}
+
+#homebar {
+	grid-row: 3/4; 
+	grid-column: 1/-1;
+
+
+}
+
+
+
+#header1 {
+	grid-row: 6/8;
+	grid-column: 4/10;
+}
+
+#paragraph1 {
+
+	grid-row: 8/12;
+	grid-column: 4/10;
+}
+
+#testcode2 {
+	grid-row: 5/9;
+	grid-column: 3/9;
+}
+
+
+
+#testcode {
+	grid-row: 5/10;
+	grid-column: 13/19;
+}
+
+
+
+#textalign {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	height: 80px;
+	align-items: center;
+
+}
+
+#paragraph3 {
+	align-items: flex-end;
+	align-self: flex-end;
+	width: 500px;
+	justify-self: center;
+	text-align: center;
+}
+
+
+#testcode1 {
+	grid-row: 10/12;
+	grid-column: 3/9;
+
+}
