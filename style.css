@@ -2,17 +2,8 @@ a:focus {
 	outline: none;
 }
 
-#grid {
-	display: grid;
-	grid-template-columns: repeat(20, 1fr);
-	grid-template-rows: repeat(12, 100px);
-}
-
 #title {
-	grid-row: 1/3;
-	grid-column: 7/15;
-	align-self: flex-start;
-	justify-self: center;
+
 	font-family: 'Nova Round';
 	font-size: 90px;
 	font-weight: 100;
@@ -25,8 +16,6 @@ a:focus {
 
 #slogan {
 	margin-bottom: 15px;
-	grid-row: 1/3;
-	grid-column: 9/13;
 	align-self: flex-end;
 	justify-self: center;
 	color: black;
@@ -35,8 +24,7 @@ a:focus {
 }
 
 #gray-background-one {
-	grid-row: 1/6;
-	grid-column: 1/-1;
+
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
 	background-color: #6e6e6e;
@@ -44,8 +32,7 @@ a:focus {
 }
 
 #gray-background-two {
-	grid-row: 1/-1;
-	grid-column: 1/10;
+
 	-webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
 	background-color: #aaaaaa;
@@ -53,8 +40,7 @@ a:focus {
 }
 
 #gray-background-three {
-	grid-row: 3/12;
-	grid-column: 6/17;
+
 	-webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
 	background-color: #e6e6e6;
@@ -62,8 +48,7 @@ a:focus {
 }
 
 #homebar {
-	grid-row: 3/4; 
-	grid-column: 1/-1;
+
 	margin-top: 30px;
 	align-self: flex-start;
 	justify-content: center;
@@ -205,8 +190,7 @@ a:link {
 }
 
 #header1 {
-	grid-row: 6/8;
-	grid-column: 4/10;
+
 	align-items: flex-end;
 	align-content: flex-end;
 	align-self: flex-end;
@@ -226,13 +210,11 @@ a:link {
 #paragraph1 {
 	margin-left: 10px;
 	margin-right: 5px;
-	grid-row: 8/12;
-	grid-column: 4/10;
+
 }
 
 #testcode2 {
-	grid-row: 5/9;
-	grid-column: 3/9;
+
 	background-color: white;
 	box-shadow: 1.5px 2px 2px 1.5px gray;
 	border-radius: 7px;
@@ -272,8 +254,7 @@ a:link {
 
 
 #testcode {
-	grid-row: 5/10;
-	grid-column: 13/19;
+
 	background-color: white;
 	box-shadow: 1.5px 2px 2px 1.5px gray;
 	border-radius: 7px;
@@ -329,8 +310,7 @@ li {
 }
 
 #testcode1 {
-	grid-row: 10/12;
-	grid-column: 3/9;
+
 	background-color: white;
 	box-shadow: 1.5px 2px 2px 1.5px gray;
 	border-radius: 7px;
