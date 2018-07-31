@@ -9,19 +9,144 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<link href="style.css" rel="stylesheet">
 		<link href="grid.css" rel="stylesheet">
+		<style>
+            /* Set a style for all buttons */
+            button {
+            	font-size: 32px;
+            	background-color: inherit;
+                color: white;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
 
+            button:hover {
+                color: black;
+            }
+
+            /* Extra styles for the cancel button */
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+                font-size: 1.15em;
+                color: #444444;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+            }
+
+            /* Center the image and position the close button */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+
+            .container {
+                padding: 16px;
+                color: black;
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                padding-top: 60px;
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: #000;
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+
+            /* Add Zoom Animation */
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+
+            @-webkit-keyframes animatezoom {
+                from {-webkit-transform: scale(0)} 
+                to {-webkit-transform: scale(1)}
+            }
+                
+            @keyframes animatezoom {
+                from {transform: scale(0)} 
+                to {transform: scale(1)}
+            }
+
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                .cancelbtn {
+                   width: 100%;
+                }
+            }
+        </style>
 	</head>
 	<body>
 		<div id="grid">
-			<div id="title"><a href="file:///home/cts/Documents/combinedProject/frontend.html"><span class="blue">R</span><span style="color: #e6e6e6;">esourcing</span> <span class="blue">C</span><span style="color: #e6e6e6;">ode</span></a></div>
-			<div id="slogan"><p>Coding to Prepare</p></div>
+			<div id="title"><a href="file:///home/cts/Documents/combinedProject/frontend.html"><span class="blue">R</span><span class="blue">C</span></a></div>
+			<div id="title2"><a href="file:///home/cts/Documents/combinedProject/frontend.html"><span class="blue">R</span><span style="color: #9e9e9e;">esourcing</span></a></div>
+			<div id="title3"><a href="file:///home/cts/Documents/combinedProject/frontend.html"><span class="blue">C</span><span style="color: #9e9e9e;">ode</span></a></div>
+			<div id="slogan"><p style="margin: 0px; margin-bottom: 18px;">Coding to Prepare</p></div>
 			<div id="gray-background-one"></div>
 			<div id="gray-background-two"></div>
 			<div id="gray-background-three"></div>
+			<div id="white-background-one"></div>
+			<div id="black-background-one"></div>
+			<div id="try2" data-interchange="[https://originalmockups.com/kirby-content/thumbs/bundles/infinity-mockup-bundle/infinity-mockup-bundle-cover@2x-2000x1000-q100.jpg, (default)], [https://originalmockups.com/kirby-content/thumbs/bundles/infinity-mockup-bundle/infinity-mockup-bundle-cover@2x-4000x2000-q80.jpg, (retina)]" alt="Infinity Mockup Bundle by Original Mockups on Original Mockups" style="background-position: center center; background-image: url(&quot;https://originalmockups.com/kirby-content/thumbs/bundles/infinity-mockup-bundle/infinity-mockup-bundle-cover@2x-1500x1000-q100.jpg&quot;);" data-uuid="interchange-jk8h6y9b0"> <noscript> <img src="https://originalmockups.com/kirby-content/thumbs/bundles/infinity-mockup-bundle/infinity-mockup-bundle-cover@2x-1500x1000-q100.jpg" width="100%" height="100%" alt="Infinity Mockup Bundle by Original Mockups on Original Mockups" title="Infinity Mockup Bundle by Original Mockups on Original Mockups"/> </noscript> </div>
+			<!--<div id="picture">
+				<i class="fas fa-angle-left"></i>
+				<i class="fas fa-exclamation fa-fw"></i>
+				<i class="fas fa-minus fa-fw"></i>
+				<i class="fas fa-minus fa-fw"></i>
+				<p style="font-weight: bold;">R</p>
+				<p style="font-weight: bold;">C</p>
+				<i class="fas fa-minus fa-fw"></i>
+				<i class="fas fa-minus fa-fw"></i>
+				<i class="fas fa-angle-right fa-fw"></i>
+			</div>-->
+			<div id="picture">
+				<p>
+					&lt;!-
+				</p>
+				<p> -RC </p>
+				<p>--&gt;</p>
+			</div>
 			<div id="homebar">
-				<a href="file:///home/cts/Documents/combinedProject/frontend.html"><p><span class="blue">H</span><span style="color: white;">ome</span></p></a>
+				<a href="file:///home/cts/Documents/combinedProject/frontend.html"><p><span class="blue">H</span><span style="color: #cccccc;">ome</span></p></a>
 				<div class="dropdown">
 					<button class="dropbtn"><span class="blue">H</span>TML <span class="blue">L</span>inks</button>
 					<div class="dropdown-content">
@@ -55,74 +180,30 @@
 					</div>
 				</div>
 			</div>
-			<div id="testcode2">
-				<div class="mediumtext" id="header1">
-					<p>
-						About Resourcing Code
-					</p>
-					<hr>
-				</div>
-				<div class="paragraphtext" id="paragraph1">
-					<p>
-						Resourcing Code is a website built exclusively to help the average coder. We offer many external links that help you obtain knowledge on certain coding subjects. We guarantee that you will benefit from this website if you use it to your advantage. It is meant to help beginner coders start up in coding, although more advanced coders can still benefit from the resources offered.
-					</p>
-				</div>
-			</div>
-			<div id="testcode">
-				<div class="mediumtext" id="header2">
-					<p style="justify-self: center;">
-						How to Use
-					</p>
-					<hr>
-				</div>
-				<div class="paragraphtext2" id="paragraph2">
-					<p style="text-align: center;">Pick a language you want to learn more about:</p>
-					<div style="text-align: center;" id="textalign">
-						<div class="dropdown2">
-							<button class="dropbtn2">HTML</button>
-							<div class="dropdown-content2">
-							    <a href="#" style="color: white;">????</a>
-							    <a href="#" style="color: white;">????</a>
-							    <a href="#" style="color: white;">????</a>
-							</div>
-						</div>
-						<div class="dropdown2">
-							<button class="dropbtn2">CSS</button>
-							<div class="dropdown-content2">
-							    <a href="#" style="color: white;">????</a>
-							    <a href="#" style="color: white;">????</a>
-							    <a href="#" style="color: white;">????</a>
-							</div>
-						</div>
-						<div class="dropdown2">
-							<button class="dropbtn2">Javascript</button>
-							<div class="dropdown-content2">
-							    <a href="#" style="color: white;">????</a>
-							    <a href="#" style="color: white;">????</a>
-							    <a href="#" style="color: white;">????</a>
-							</div>
-						</div>
-					</div>
-					<p style="padding-top: 15px;">Find the specific subject in that language that you want to learn about.</p>
-					<p>Click on the links in that subject.</p>
-					<p>Research and Apply to your code.</p>
-				</div>
-			</div>
-			<div id="testcode1">
-				<div class="mediumtext" id="header3">
-					<p>
-						Designed By
-					</p>
-					<hr>
-				</div>
-				<div class="paragraphtext3" id="paragraph3">
-<<<<<<< HEAD
-					<p>This page was designed by Joe Hickey, Isaac Nielsen, Zeke Gunther, and <a href="mailto:djconsultationfirm@gmail.com">DJ Consultation Firm.</a></p>
-=======
-					<p>This page was designed by Joe Hickey, Isaac Nielsen, and <a href="mailto:djconsultationfirm@gmail.com">DJ Consultation Firm.</a></p>
->>>>>>> 82fc77ee59b45e50c4b37291160b72049235e1b1
-				</div>
-			</div>
+			<div id="discover">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color: inherit; font-family: 'Nova Round'; color: white;">Discover</button>
+		        <div id="id01" class="modal">
+		            <form class="modal-content animate">
+		                <div class="imgcontainer">
+		                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Login">&times;</span>
+		                </div>
+		                <div class="container">
+		                	<p>Some Text In The Container</p>
+		                </div>
+		            </form>
+		        </div>
+		        <script>
+		        // Get the modal
+		        var modal = document.getElementById('id01');
+
+		        // When the user clicks anywhere outside of the modal, close it
+		        window.onclick = function(event) {
+		            if (event.target == modal) {
+		                modal.style.display = "none";
+		            }
+		        }
+		        </script>
+		    </div>
 		</div>
 	</body>
 </html>
@@ -134,9 +215,10 @@ To Do List:
 Make It Triangle start and end
 All links target blank
 General Css looks
-Move all css grids to grid.css
 Help Joe and Zeke understand what they do
 Merging code from github
 
 
 -->
+
+
