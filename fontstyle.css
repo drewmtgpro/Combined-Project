@@ -71,7 +71,7 @@
 	border-radius: 7px;
 	box-shadow: 1.5px 2px 2px 1.5px #444444;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 1fr;
 	justify-items: center;
 	font-family: 'Nova Round';
@@ -143,7 +143,7 @@ a:link {
 	grid-row: 4/13;
 	grid-column: 2/20;
 	margin-bottom: 15px;
-	margin-top: 30px;
+	margin-top: 15px;
 	background-color: white;
 	color: black;
 	text-align: center;
