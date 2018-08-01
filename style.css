@@ -143,6 +143,20 @@ i {
 	z-index: 10000;
 }
 
+
+
+.header {
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Poppins';
+}
+
+.paragraph {
+	font-size: 18px;
+	font-weight: 300;
+	font-family: 'Poppins';
+}
+
 input {
 	font-size: 32px;
 	font-family: 'Nova Round';
