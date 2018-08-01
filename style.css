@@ -20,6 +20,7 @@ a:focus {
 	font-weight: 100;
 	color: #e6e6e6;
 	z-index: 10;
+	margin-left: 0px;
 }
 
 #title3  {
@@ -28,10 +29,12 @@ a:focus {
 	font-weight: 100;
 	color: #e6e6e6;
 	z-index: 10;
+	margin-left: 0px;
 }
 
 .blue {
 	color: #3b7fed;
+	margin-left: 0px;
 }
 
 #slogan {
@@ -92,6 +95,7 @@ a:focus {
 	grid-column-gap: 0px;
 	font-size: 80px;
 	font-family: monospace;
+	margin-right: 5px;
 }
 
 i {
@@ -126,6 +130,20 @@ i {
 	justify-self: center;
 	color: white;
 	z-index: 10000;
+}
+
+
+
+.header {
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Poppins';
+}
+
+.paragraph {
+	font-size: 18px;
+	font-weight: 300;
+	font-family: 'Poppins';
 }
 
 input {
