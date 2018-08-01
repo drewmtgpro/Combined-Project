@@ -1,3 +1,7 @@
+@import url("media.css");
+
+
+
 body {
 	margin: 0px;
 }
@@ -7,11 +11,17 @@ a:focus {
 }
 
 #title {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns:125px,20px, repeat(4, 1fr);
+	min-width: 325px;
+
 	font-family: 'Cinzel';
 	font-size: 90px;
 	font-weight: 100;
 	color: #e6e6e6;
 	line-height: 70px;
+
 }
 
 #title2  {
@@ -38,6 +48,7 @@ a:focus {
 }
 
 #slogan {
+	padding-left: 20px;
 	align-self: flex-end;
 	justify-self: flex-end;
 	margin: 0px;
@@ -268,4 +279,17 @@ a:link {
 	color: white;
 	display: block;
 	font-size: 18px;
+}
+
+
+@media screen(min-width: 48em) {
+
+
+}
+@media (min-width: 48em) {
+
+}
+@media (max-width: 48em) {
+
+
 }
