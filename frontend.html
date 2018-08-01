@@ -13,19 +13,15 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<link href="style.css" rel="stylesheet">
 		<link href="grid.css" rel="stylesheet">
+		<link href="media.css" rel="stylesheet">
 		<style>
             /* Set a style for all buttons */
             button {
-            	font-size: 32px;
+            	font-size: 45px;
             	background-color: inherit;
                 color: white;
                 border: none;
                 cursor: pointer;
-                width: 100%;
-            }
-
-            button:hover {
-                color: black;
             }
 
             /* Extra styles for the cancel button */
@@ -43,12 +39,18 @@
             /* Center the image and position the close button */
             .imgcontainer {
                 text-align: center;
-                margin: 24px 0 12px 0;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 2px;
+                margin-left: 0px;
                 position: relative;
             }
 
             .container {
-                padding: 16px;
+                padding-right: 12px;
+                padding-left: 12px;
+                padding-bottom: 12px;
+                padding-top: 4px;
                 color: black;
             }
 
@@ -78,10 +80,10 @@
             /* The Close Button (x) */
             .close {
                 position: absolute;
-                right: 25px;
+                right: 20px;
                 top: 0;
                 color: #000;
-                font-size: 35px;
+                font-size: 50px;
                 font-weight: bold;
             }
 
@@ -117,10 +119,11 @@
 	</head>
 	<body>
 		<div id="grid">
-			<div id="title"><a href="file:///home/cts/Documents/combinedProject/frontend.html"><span class="blue">R</span><span class="blue">C</span></a></div>
+			<div id="title"><a href="file:///home/cts/Documents/combinedProject/frontend.html"><span class="blue">R</span><span class="blue">C</span></a>
+				<p id="slogan">Coding to Prepare</p></div>
 			<div id="title2"><a href="file:///home/cts/Documents/combinedProject/frontend.html"><span class="blue">R</span><span style="color: #9e9e9e;">esourcing</span></a></div>
 			<div id="title3"><a href="file:///home/cts/Documents/combinedProject/frontend.html"><span class="blue">C</span><span style="color: #9e9e9e;">ode</span></a></div>
-			<div id="slogan"><p style="margin: 0px; margin-bottom: 18px;">Coding to Prepare</p></div>
+			<!-- <div id="slogan"><p style="margin: 0px; margin-bottom: 18px;">Coding to Prepare</p></div> -->
 			<div id="gray-background-one"></div>
 			<div id="gray-background-two"></div>
 			<div id="gray-background-three"></div>
@@ -158,6 +161,14 @@
 				<div class="dropdown">
 					<button class="dropbtn"><span class="blue">C</span>SS <span class="blue">L</span>inks</button>
 					<div class="dropdown-content">
+					    <a href="file:///home/cts/Documents/combinedProject/cssone.html" style="color: white;">Color Picker</a>
+					    <a href="file:///home/cts/Documents/combinedProject/css.html" style="color: white;">CSS</a>
+					    <a href="#" style="color: white;">????</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn"><span class="blue">S</span>CSS <span class="blue">L</span>inks</button>
+					<div class="dropdown-content">
 					    <a href="#" style="color: white;">????</a>
 					    <a href="#" style="color: white;">????</a>
 					    <a href="#" style="color: white;">????</a>
@@ -166,7 +177,7 @@
 				<div class="dropdown">
 					<button class="dropbtn"><span class="blue">J</span>avascript <span class="blue">L</span>inks</button>
 					<div class="dropdown-content">
-					    <a href="file:///home/cts/Documents/combinedProject/javaScriptLinks.html" style="color: white;">jabaa</a>
+					    <a href="file:///home/cts/Documents/combinedProject/javaScriptLinks.html" style="color: white;">Javascript P1</a>
 					    <a href="#" style="color: white;">????</a>
 					    <a href="#" style="color: white;">????</a>
 					</div>
@@ -181,27 +192,48 @@
 				</div>
 			</div>
 			<div id="discover">
-				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color: inherit; font-family: 'Nova Round'; color: white;">Discover</button>
+				<button onclick="document.getElementById('id01').style.display='block'" style="align-content: center; background-color: inherit; font-family: 'Nova Round'; color: white;">Discover</button>
 		        <div id="id01" class="modal">
 		            <form class="modal-content animate">
 		                <div class="imgcontainer">
 		                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Login">&times;</span>
 		                </div>
 		                <div class="container">
-		                	<p>Some Text In The Container</p>
+		                	<p class="header">
+		                		About Us
+		                	</p>
+		                	<p class="paragraph">
+		                		Our site holds links to other sites covering various topics. We do not take credit for the other sites, but we compile them to help coders have resources on common problems. We verify that the external links contain quality information that has helped even us. This site is solely a repository, nothing more. We do not have code help on our site, we just hold links to other sites who have done the subject justice.
+		                	</p>
+		                	<p class="header">
+		                		What Subjects Do We Cover?
+		                	</p>
+		                	<p class="paragraph">
+		                		HTML: ......
+		                		CSS: ......
+		                		SCSS: ......
+		                		Javascript: .....
+		                		Fonts: .....
+		                	</p>
+		                	<p class="header">
+		                		Our Purpose
+		                	</p>
+		                	<p class="paragraph">
+		                		Our main purpose was to be a resevoir of knowledge to help coders with common coding problems. We have expanded to include Javascript and some Font links. We hope you use our product to your advantage.
+		                	</p>
 		                </div>
 		            </form>
 		        </div>
 		        <script>
-		        // Get the modal
-		        var modal = document.getElementById('id01');
+			        // Get the modal
+			        var modal = document.getElementById('id01');
 
-		        // When the user clicks anywhere outside of the modal, close it
-		        window.onclick = function(event) {
-		            if (event.target == modal) {
-		                modal.style.display = "none";
-		            }
-		        }
+			        // When the user clicks anywhere outside of the modal, close it
+			        window.onclick = function(event) {
+			            if (event.target == modal) {
+			                modal.style.display = "none";
+			            }
+			        }
 		        </script>
 		    </div>
 		</div>
