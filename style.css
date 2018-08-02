@@ -281,20 +281,43 @@ a:link {
 }
 
 
-@media only screen(max-width: 600px) {
-	
-	
+@media only screen and (max-width: 600px) {
+	#homebar {
+		
+		width: 100vw;
+		padding-left: 0px;
+		
+	}
+	.dropbtn{
+		background: rgba(0,0,255,.05);
+		width: 100vw;
+		text-align: left;
+	}
+
+	.dropdown-content {
+    display: none;
+    position: relative;
+    justify-content: center;
+    background: red;
+
+}
 }
 
-@media only screen(min-width: 600px; max-width: 992px) {
-
+/*@media only screen and (min-width: 600px)and (max-width: 992px) {
+	.blue {
+		
+	}
 }
 /*phone screen*/
-@media only screen(max-device-width: 600px) {
-
-
-}
-
-@media only screen(min-device-width: 600px; max-device-width: 992px) {
+/*@media only screen and (max-device-width: 600px) {
+	.blue {
+		
+	}
 
 }
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 992px) {
+	.blue {
+		
+	}
+}*/*/
