@@ -19,7 +19,7 @@
 }
 
 #title3 {
-	grid-row: 6/9;
+	grid-row: 5/9;
 	grid-column: 5/17;
 	align-self: center;
 	justify-self: flex-start;
@@ -110,13 +110,28 @@
 		grid-column: 1/-1;
 		z-index: -2000;
 	}
+
+	#title2 {
+		grid-row: 3/6;
+		grid-column: 5/17;
+		align-self: center;
+		justify-self: flex-start;
+	}
+
+	#title3 {
+		grid-row: 4/7;
+		grid-column: 5/17;
+		align-self: center;
+		justify-self: flex-start;
+	}
+
 	
 }
 
-/*@media only screen and (min-width: 600px)and (max-width: 992px) {
+@media only screen and (min-width: 600px)and (max-width: 992px) {
 	#homebar {
-		grid-row: 2/3; 
-		grid-column: 1/21;
+		grid-row: 1/1; 
+		grid-column: 1/5;
 
 		
 		grid-template-rows: repeat(5, 1fr);
@@ -134,13 +149,33 @@
 		font-size: 25px;
 		align-items: left;
 		align-content: left;
+
+	}
+	#try2 {
+		grid-row: 1/-1;
+		grid-column: 1/-1;
+		z-index: -2000;
+	}
+
+	#title2 {
+		grid-row: 3/6;
+		grid-column: 5/17;
+		align-self: center;
+		justify-self: flex-start;
+	}
+
+	#title3 {
+		grid-row: 4/7;
+		grid-column: 5/17;
+		align-self: center;
+		justify-self: flex-start;
 	}
 }
-/*phone screen
+/*phone screen*/
 @media only screen and (max-device-width: 600px) {
 	#homebar {
-		grid-row: 2/3; 
-		grid-column: 1/21;
+		grid-row: 1/1; 
+		grid-column: 1/5;
 
 		
 		grid-template-rows: repeat(5, 1fr);
@@ -158,14 +193,34 @@
 		font-size: 25px;
 		align-items: left;
 		align-content: left;
+
+	}
+	#try2 {
+		grid-row: 1/-1;
+		grid-column: 1/-1;
+		z-index: -2000;
+	}
+
+	#title2 {
+		grid-row: 3/6;
+		grid-column: 5/17;
+		align-self: center;
+		justify-self: flex-start;
+	}
+
+	#title3 {
+		grid-row: 4/7;
+		grid-column: 5/17;
+		align-self: center;
+		justify-self: flex-start;
 	}
 
 }
 
 @media only screen and (min-device-width: 600px) and (max-device-width: 992px) {
 	#homebar {
-		grid-row: 2/3; 
-		grid-column: 1/21;
+		grid-row: 1/1; 
+		grid-column: 1/5;
 
 		
 		grid-template-rows: repeat(5, 1fr);
@@ -183,6 +238,26 @@
 		font-size: 25px;
 		align-items: left;
 		align-content: left;
+
+	}
+	#try2 {
+		grid-row: 1/-1;
+		grid-column: 1/-1;
+		z-index: -2000;
 	}
 
-}*/
+	#title2 {
+		grid-row: 3/6;
+		grid-column: 5/17;
+		align-self: center;
+		justify-self: flex-start;
+	}
+
+	#title3 {
+		grid-row: 4/7;
+		grid-column: 5/17;
+		align-self: center;
+		justify-self: flex-start;
+	}
+
+}

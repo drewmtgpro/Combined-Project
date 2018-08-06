@@ -23,25 +23,29 @@ a:focus {
 
 #title2  {
 	font-family: 'Cinzel', serif;
-	font-size: 180px;
+	font-size: 10vw;
 	font-weight: 100;
 	color: #e6e6e6;
 	z-index: 10;
 	margin-left: 0px;
+	text-shadow:10px 10px  rgba(72,61,139,.1);
 }
 
 #title3  {
 	font-family: 'Cinzel', serif;
-	font-size: 180px;
+	font-size: 10vw;
 	font-weight: 100;
 	color: #e6e6e6;
 	z-index: 10;
 	margin-left: 0px;
+	text-shadow: 10px 10px rgba(72,61,139,.1) ;
 }
 
 .blue {
 	color: #3b7fed;
 	margin-left: 0px;
+
+
 }
 
 #slogan {
@@ -321,6 +325,61 @@ footer {
 
 @media only screen and (max-width: 600px) {
 	#homebar {
+		background: #05212d;
+		width: 100%;
+		padding-left: 0px;
+		padding-top: 10px;
+		
+	}
+	.dropbtn{
+		background: #05212d;
+		width: 100vw;
+		text-align: left;
+		padding-top: 0px;
+	}
+
+	.dropdown-content {
+    	display: none;
+    	position: relative;
+    	justify-content: center;
+    	background: #082341;
+    	width: 100vw;
+    }
+
+    .home {
+    	position: static;
+    	padding-top: 150px;
+    	text-align: center;	
+    	visibility: hidden;
+    }
+
+    #picture {
+    	visibility: hidden;
+    }
+
+    #title2  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
+	}
+
+	#title3  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
+	}
+
+
+}
+
+@media only screen and (min-width: 600px)and (max-width: 992px) {
+	#homebar {
 		
 		width: 100%;
 		padding-left: 0px;
@@ -339,6 +398,7 @@ footer {
     	position: relative;
     	justify-content: center;
     	background: #082341;
+    	width: 100vw;
     }
 
     .home {
@@ -353,26 +413,74 @@ footer {
     }
 
     #title2  {
-	font-family: 'Cinzel', serif;
-	font-size: 50px;
-	font-weight: 100;
-	color: #e6e6e6;
-	z-index: 10;
-	margin-left: 0px;
-}
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
+	}
 
-
-}
-
-/*@media only screen and (min-width: 600px)and (max-width: 992px) {
-	.blue {
-		
+	#title3  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
 	}
 }
 /*phone screen*/
-/*@media only screen and (max-device-width: 600px) {
-	.blue {
+@media only screen and (max-device-width: 600px) {
+#homebar {
 		
+		width: 100%;
+		padding-left: 0px;
+		padding-top: 10px;
+		
+	}
+	.dropbtn{
+		background: #05212d;
+		width: 100vw;
+		text-align: left;
+		padding-top: 0px;
+	}
+
+	.dropdown-content {
+    	display: none;
+    	position: relative;
+    	justify-content: center;
+    	background: #082341;
+    	width: 100vw;
+    }
+
+    .home {
+    	position: static;
+    	padding-top: 150px;
+    	text-align: center;	
+    	visibility: hidden;
+    }
+
+    #picture {
+    	visibility: hidden;
+    }
+
+    #title2  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
+	}
+
+	#title3  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
 	}
 
 }
