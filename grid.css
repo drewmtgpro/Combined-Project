@@ -125,6 +125,14 @@
 		justify-self: flex-start;
 	}
 
+	#grid {
+		grid-template-columns: repeat(20,1fr);
+		grid-template-rows: repeat(12, 100px);
+	}
+
+	#discover {
+		grid-row: 6/7;
+	}
 	
 }
 
@@ -169,6 +177,10 @@
 		grid-column: 5/17;
 		align-self: center;
 		justify-self: flex-start;
+	}
+
+	#discover {
+		grid-row: 6/7;
 	}
 }
 /*phone screen*/

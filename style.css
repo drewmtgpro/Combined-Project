@@ -132,9 +132,9 @@ i {
 }
 
 #discover {
-	font-size: 45px;
-	padding-left: 25px;
-	padding-right: 25px;
+	font-size: 2.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
 	font-family: 'Nova Round';
 	background-color: inherit;
 	border: none;
@@ -192,7 +192,7 @@ a:link {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
 }
 
 .dropdown-content {
@@ -228,7 +228,6 @@ a:link {
 	display: block;
 	padding: 12px;
 	color: white;
-	display: block;
 	font-size: 18px;
 }
 
@@ -323,19 +322,126 @@ footer {
  	justify-items:center;
 }
 
+button {
+	font-size: 2.5vw;
+	background-color: inherit;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    font-size: 1.15em;
+    color: #444444;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 2px;
+    margin-left: 0px;
+    position: relative;
+}
+
+.container {
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    padding-top: 4px;
+    color: black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
 
 
 @media only screen and (max-width: 600px) {
 	#homebar {
-		background: #05212d;
-		width: 100%;
-		padding-left: 0px;
-		padding-top: 10px;
+		width: 80%;
+		margin-left: 5px;
+		margin-top: 180px;
 		
 	}
-	.dropbtn{
-		background: #05212d;
-		width: 100vw;
+
+	.dropdown:hover .dropdown-content {
+		position: absolute;
+		z-index: 100000;
+	}
+
+	button {
+		font-size: 5vw;
+	}
+	.dropbtn {
+		background: inherit;
+		width: 90vw;
 		text-align: left;
 		padding-top: 0px;
 	}
@@ -345,12 +451,12 @@ footer {
     	position: relative;
     	justify-content: center;
     	background: #082341;
-    	width: 100vw;
+    	width: 50vw;
+    	left: 25%;
     }
 
     .home {
     	position: static;
-    	padding-top: 150px;
     	text-align: center;	
     	visibility: hidden;
     }
@@ -381,18 +487,26 @@ footer {
 }
 
 @media only screen and (min-width: 600px)and (max-width: 992px) {
+	.dropdown:hover .dropdown-content {
+		position: absolute;
+		z-index: 100000;
+	}
+
 	#homebar {
-		
-		width: 100%;
-		padding-left: 0px;
-		padding-top: 10px;
+		width: 250px;
+		margin-left: 5px;
+		margin-top: 40px;
 		
 	}
 	.dropbtn{
-		background: #05212d;
-		width: 100vw;
+		background: inherit;
+		width: 95vw;
 		text-align: left;
 		padding-top: 0px;
+	}
+
+	button {
+		font-size: 4.5vw;
 	}
 
 	.dropdown-content {
@@ -400,7 +514,8 @@ footer {
     	position: relative;
     	justify-content: center;
     	background: #082341;
-    	width: 100vw;
+    	width: 70vw;
+    	left: 25%;
     }
 
     .home {
@@ -434,16 +549,24 @@ footer {
 }
 /*phone screen*/
 @media only screen and (max-device-width: 600px) {
-#homebar {
-		
+	#homebar {
 		width: 100%;
-		padding-left: 0px;
-		padding-top: 10px;
+		margin-left: 5px;
+		margin-top: 180px;
 		
 	}
+
+	.dropdown:hover .dropdown-content {
+		position: absolute;
+		z-index: 100000;
+	}
+
+	button {
+		font-size: 5vw;
+	}
 	.dropbtn{
-		background: #05212d;
-		width: 100vw;
+		background: inherit;
+		width: 250px;
 		text-align: left;
 		padding-top: 0px;
 	}
@@ -453,12 +576,12 @@ footer {
     	position: relative;
     	justify-content: center;
     	background: #082341;
-    	width: 100vw;
+    	width: 70vw;
+    	left: 25%;
     }
 
     .home {
     	position: static;
-    	padding-top: 150px;
     	text-align: center;	
     	visibility: hidden;
     }
