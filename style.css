@@ -72,20 +72,20 @@ a:focus {
 #gray-background-two {
 	-webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
-	background:linear-gradient(to bottom ,#05212d, #082341) ;
+	background:linear-gradient(to bottom ,#05212d, #001b26) ;
 	z-index: -20;
 }
 
 #gray-background-three {
 	-webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
-	background-color: #082341;
+	background:linear-gradient(to top, #082341, #05212d) ;
 	z-index: -30;
 }
 
 
 #white-background-one {
-	background:linear-gradient(to bottom left, white,grey);
+	background:linear-gradient(to bottom left, white, #969696);
 	z-index: -1;
 }
 
@@ -284,34 +284,41 @@ a:link {
 	font-size: 18px;
 }
 
-.footer {
-	background: rgba(255,255,255,0.8);
-	height:20px;
-
+footer {
+	background:linear-gradient(to bottom, white, #dddddd);
+	justify-content: center;
+	justify-items: center;
+	justify-self: center;
 	z-index: 5000;
-	position:fixed;
-	left:0;
-	bottom:0;
-	width:100vw;
-
+	position:relative;
+	width: 100%;
 	color: black;
-	
-
-
-
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 30px;
+	font-family: 'Poppins';
 }   
 
-.footer,
- .right-footer{
- 	padding-top: 10px;
-
-	padding-left: 20px;
-	padding-right: 20px;
+.right-footer {
+	font-size: 20px;
+ 	justify-content: center;
+ 	justify-self: center;
+ 	justify-items: center;
 }
 
 
- .left-footer{
+.left-footer {
+	font-size: 20px;
+	justify-content: center;
+ 	justify-self: center;
+ 	justify-items: center;
+}
 
+.center-footer {
+	font-size: 20px;
+	justify-content: center;
+ 	justify-self: center;
+ 	justify-items:center;
 }
 
 
