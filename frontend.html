@@ -11,6 +11,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 		<link href="style.css" rel="stylesheet">
 		<link href="grid.css" rel="stylesheet">
 		<link href="media.css" rel="stylesheet">
@@ -46,7 +47,10 @@
 				<p> -RC </p>
 				<p>--&gt;</p>
 			</div>
-			<div id="homebar">
+			<div id="homebar" class="not-active" style="position: absolute;" >
+				<a href="#" class="toggle" id="navHamburger" style="position: absolute;  ">
+		            <i class="fas fa-bars"></i>
+		        </a>
 				<div class="home">
 					<a href="file:///home/cts/Documents/combinedProject/frontend.html"><p><span class="blue">H</span><span style="color: #cccccc;">ome</span></p></a>
 				</div>
@@ -150,6 +154,13 @@
 			<a href="mailto:djconsultationfirm@gmail.com?subject=I want to Donate" class="right-footer"><span style="color:black;">Donate</span></a>
 		</footer>
 	</body>
+	<script>
+	    const navHamburger = document.querySelector('#navHamburger');
+	    navHamburger.addEventListener('click', (e) => {
+	        navHamburger.parentElement.classList.toggle('active');
+	        navHamburger.parentElement.classList.toggle("not-active");
+	    })
+	</script>
 </html>
 
 
