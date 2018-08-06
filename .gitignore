@@ -8,3 +8,5 @@ yarn-error.log
 # project
 dist/
 env.js
+
+gulpfile.js
