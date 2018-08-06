@@ -133,11 +133,13 @@ i {
 
 #discover {
 	font-size: 45px;
+	padding-left: 25px;
+	padding-right: 25px;
 	font-family: 'Nova Round';
 	background-color: inherit;
 	border: none;
 	border: 1px solid white;
-	border-radius: 5px;
+	border-radius: 8px;
 	align-self: center;
 	align-content: center;
 	align-items: center;
