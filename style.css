@@ -115,20 +115,19 @@ i {
 }
 
 #homebar {
-	align-self: center;
-	justify-content: center;
-	justify-self: center;
+	
+	justify-self: right;
+	margin-top: 40px;
 	height: 50px;
 	margin-right: 5px;
 	color: #cccccc;
 	display: grid;
 	grid-template-columns: repeat(6, minmax(100px, 225px));
 	grid-template-rows: 1fr;
-	justify-items: center;
+	
 	font-family: 'Nova Round';
 	font-size: 25px;
-	align-items: center;
-	align-content: center;
+	
 }
 
 #discover {
@@ -399,14 +398,14 @@ button {
 }
 
 
-#homebar .toggle {
+ .toggle {
     padding: 1em;
-    color: white;
+    color: #cccccc;
+    size: 20px;
+    visibility: hidden;
 }
 
-.fas .fa-bars{
-	color:white;
-}
+
 
 
 /* Add Zoom Animation */
@@ -439,6 +438,7 @@ button {
 		width: 80%;
 		margin-left: 5px;
 		margin-top: 180px;
+
 		
 	}
 	 .not-active div {
@@ -473,11 +473,7 @@ button {
     	left: 25%;
     }
 
-    .home {
-    	position: static;
-    	text-align: center;	
-    	visibility: hidden;
-    }
+    
 
     #picture {
     	visibility: hidden;
@@ -501,9 +497,11 @@ button {
 		margin-left: 0px;
 	}
 
-	#homebar.active .toggle {
-        background: darkslategrey;
-        color: white;
+	 .toggle {
+        background: inherit;
+        color: #cccccc;
+        visibility: visible;
+
     }
     #homebar .home {
         text-align: left;
@@ -511,6 +509,13 @@ button {
      .active div {
         display: block;
         visibility: visible;
+    }
+
+    .home {
+    	position: static;
+    	text-align: center;	
+    	visibility: hidden;
+    	z-index: -1000000000;
     }
 
 }
@@ -668,17 +673,15 @@ button {
 
 
 
-#homebar .toggle,
-#homebar .home {
-    display: inline-block;
-}
+
 
 
 #homebar .home {
     width: 10em;
     text-align: center;
-    padding: 1em;
+    padding-top: 40px;
     color: white;
+    visibility: hidden;
 }
 #homebar a {
     text-decoration: none;

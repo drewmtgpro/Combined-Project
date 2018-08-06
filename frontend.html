@@ -47,11 +47,12 @@
 				<p> -RC </p>
 				<p>--&gt;</p>
 			</div>
+			<a href="#" class="toggle" id="navHamburger" style="position: absolute;  ">
+		        <i class="fas fa-bars fa-4x"></i>
+		    </a>
+
 			<div id="homebar" class="not-active" style="position: absolute;" >
-				<a href="#" class="toggle" id="navHamburger" style="position: absolute;  ">
-		            <i class="fas fa-bars"></i>
-		        </a>
-				<div class="home">
+								<div class="home">
 					<a href="file:///home/cts/Documents/combinedProject/frontend.html"><p><span class="blue">H</span><span style="color: #cccccc;">ome</span></p></a>
 				</div>
 
@@ -154,8 +155,9 @@
 	<script>
 	    const navHamburger = document.querySelector('#navHamburger');
 	    navHamburger.addEventListener('click', (e) => {
-	        navHamburger.parentElement.classList.toggle('active');
-	        navHamburger.parentElement.classList.toggle("not-active");
+	    	const element = document.getElementById('homebar')
+	        element.classList.toggle('active');
+	        element.classList.toggle("not-active");
 	    })
 	</script>
 </html>
