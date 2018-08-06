@@ -154,6 +154,24 @@ a:link {
 	font-family: 'Poppins';
 }
 
+#html {
+	grid-row: 5/13;
+	grid-column: 2/20;
+	margin-bottom: 5px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	box-shadow: 1.5px 2px 2px 1.5px gray;
+	border-radius: 7px;
+	padding: 5px;
+	font-size: 20px;
+}
+
+#happy {
+	columns: 2;
+}
+
+
 #fonthelp {
 	grid-row: 4/13;
 	grid-column: 2/20;
