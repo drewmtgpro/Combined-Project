@@ -441,6 +441,9 @@ button {
 
 		
 	}
+	.dropdown {
+		background: black;
+	}
 	 .not-active div {
 		visibility: hidden;
 	}
@@ -458,10 +461,11 @@ button {
 		font-size: 5vw;
 	}
 	.dropbtn {
-		background: inherit;
-		width: 90vw;
+		background: rgba(0,0,0,.99);
+		width: 100vw;
 		text-align: left;
 		padding-top: 0px;
+
 	}
 
 	.dropdown-content {
@@ -531,9 +535,13 @@ button {
 
 	#homebar {
 		width: 250px;
-		margin-left: 5px;
+		margin-left: px;
 		margin-top: 0px;
 		
+	}
+	.dropdown {
+		background: black;
+		width: 103.1%;
 	}
 	.dropbtn{
 		background: inherit;
@@ -678,13 +686,14 @@ button {
 
 #homebar .home {
     width: 10em;
-    text-align: center;
+    text-align: right;
     padding-top: 40px;
     color: white;
     visibility: hidden;
 }
 #homebar a {
     text-decoration: none;
+
 }
 #homebar .toggle {
     padding: 1em;
@@ -699,6 +708,10 @@ button {
 		
 	}
 
+	#homebar .dropdown {
+		text-align: right;
+	}
+
 	.dropdown:hover .dropdown-content {
 		position: absolute;
 		z-index: 100000;
@@ -708,7 +721,7 @@ button {
 		font-size: 5vw;
 	}
 	.dropbtn{
-		background: inherit;
+		background: blue;
 		width: 250px;
 		text-align: left;
 		padding-top: 0px;
