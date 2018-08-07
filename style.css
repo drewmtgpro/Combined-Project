@@ -23,25 +23,29 @@ a:focus {
 
 #title2  {
 	font-family: 'Cinzel', serif;
-	font-size: 180px;
+	font-size: 10vw;
 	font-weight: 100;
 	color: #e6e6e6;
 	z-index: 10;
 	margin-left: 0px;
+	text-shadow:10px 10px  rgba(72,61,139,.1);
 }
 
 #title3  {
 	font-family: 'Cinzel', serif;
-	font-size: 180px;
+	font-size: 10vw;
 	font-weight: 100;
 	color: #e6e6e6;
 	z-index: 10;
 	margin-left: 0px;
+	text-shadow: 10px 10px rgba(72,61,139,.1) ;
 }
 
 .blue {
 	color: #3b7fed;
 	margin-left: 0px;
+
+
 }
 
 #slogan {
@@ -61,27 +65,27 @@ a:focus {
 #gray-background-one {
 	-webkit-clip-path: polygon(100% 0, 100% 0%, 81% 100%, 0% 100%);
 	clip-path: polygon(100% 0, 100% 0%, 81% 100%, 0% 100%);
-	background-color: #3F6986;
+	background:linear-gradient(to bottom , #3F6986,#082341);
 	z-index: -40;
 }
 
 #gray-background-two {
 	-webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
-	background-color: #05212d;
+	background:linear-gradient(to bottom ,#05212d, #001b26) ;
 	z-index: -20;
 }
 
 #gray-background-three {
 	-webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
-	background-color: #082341;
+	background:linear-gradient(to top, #082341, #05212d) ;
 	z-index: -30;
 }
 
 
 #white-background-one {
-	background-color: white;
+	background:linear-gradient(to bottom left, white, #969696);
 	z-index: -1;
 }
 
@@ -128,12 +132,14 @@ i {
 }
 
 #discover {
-	font-size: 45px;
+	font-size: 2.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
 	font-family: 'Nova Round';
 	background-color: inherit;
 	border: none;
 	border: 1px solid white;
-	border-radius: 5px;
+	border-radius: 8px;
 	align-self: center;
 	align-content: center;
 	align-items: center;
@@ -186,7 +192,7 @@ a:link {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
 }
 
 .dropdown-content {
@@ -222,7 +228,6 @@ a:link {
 	display: block;
 	padding: 12px;
 	color: white;
-	display: block;
 	font-size: 18px;
 }
 
@@ -280,18 +285,329 @@ a:link {
 	font-size: 18px;
 }
 
+footer {
+	background:linear-gradient(to bottom, white, #dddddd);
+	justify-content: center;
+	justify-items: center;
+	justify-self: center;
+	z-index: 5000;
+	position:relative;
+	width: 100%;
+	color: black;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 30px;
+	font-family: 'Poppins';
+}   
 
-@media only screen(max-width: 600px) {
+.right-footer {
+	font-size: 20px;
+ 	justify-content: center;
+ 	justify-self: center;
+ 	justify-items: center;
+}
+
+
+.left-footer {
+	font-size: 20px;
+	justify-content: center;
+ 	justify-self: center;
+ 	justify-items: center;
+}
+
+.center-footer {
+	font-size: 20px;
+	justify-content: center;
+ 	justify-self: center;
+ 	justify-items:center;
+}
+
+button {
+	font-size: 2.5vw;
+	background-color: inherit;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    font-size: 1.15em;
+    color: #444444;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 2px;
+    margin-left: 0px;
+    position: relative;
+}
+
+.container {
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    padding-top: 4px;
+    color: black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+	#homebar {
+		width: 80%;
+		margin-left: 5px;
+		margin-top: 180px;
+		
+	}
+
+	.dropdown:hover .dropdown-content {
+		position: absolute;
+		z-index: 100000;
+	}
+
+	button {
+		font-size: 5vw;
+	}
+	.dropbtn {
+		background: inherit;
+		width: 90vw;
+		text-align: left;
+		padding-top: 0px;
+	}
+
+	.dropdown-content {
+    	display: none;
+    	position: relative;
+    	justify-content: center;
+    	background: #082341;
+    	width: 50vw;
+    	left: 25%;
+    }
+
+    .home {
+    	position: static;
+    	text-align: center;	
+    	visibility: hidden;
+    }
+
+    #picture {
+    	visibility: hidden;
+    }
+
+    #title2  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
+	}
+
+	#title3  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
+	}
 
 
 }
-@media only screen(min-width: 600px; max-width: 992px) {
+
+@media only screen and (min-width: 600px)and (max-width: 992px) {
+	.dropdown:hover .dropdown-content {
+		position: absolute;
+		z-index: 100000;
+	}
+
+	#homebar {
+		width: 250px;
+		margin-left: 5px;
+		margin-top: 40px;
+		
+	}
+	.dropbtn{
+		background: inherit;
+		width: 95vw;
+		text-align: left;
+		padding-top: 0px;
+	}
+
+	button {
+		font-size: 4.5vw;
+	}
+
+	.dropdown-content {
+    	display: none;
+    	position: relative;
+    	justify-content: center;
+    	background: #082341;
+    	width: 70vw;
+    	left: 25%;
+    }
+
+    .home {
+    	position: static;
+    	padding-top: 150px;
+    	text-align: center;	
+    	visibility: hidden;
+    }
+
+    #picture {
+    	visibility: hidden;
+    }
+
+    #title2  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
+	}
+
+	#title3  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
+	}
+}
+/*phone screen*/
+@media only screen and (max-device-width: 600px) {
+	#homebar {
+		width: 100%;
+		margin-left: 5px;
+		margin-top: 180px;
+		
+	}
+
+	.dropdown:hover .dropdown-content {
+		position: absolute;
+		z-index: 100000;
+	}
+
+	button {
+		font-size: 5vw;
+	}
+	.dropbtn{
+		background: inherit;
+		width: 250px;
+		text-align: left;
+		padding-top: 0px;
+	}
+
+	.dropdown-content {
+    	display: none;
+    	position: relative;
+    	justify-content: center;
+    	background: #082341;
+    	width: 70vw;
+    	left: 25%;
+    }
+
+    .home {
+    	position: static;
+    	text-align: center;	
+    	visibility: hidden;
+    }
+
+    #picture {
+    	visibility: hidden;
+    }
+
+    #title2  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
+	}
+
+	#title3  {
+		font-family: 'Cinzel', serif;
+		font-size: 10vw;
+		font-weight: 100;
+		color: #e6e6e6;
+		z-index: 10;
+		margin-left: 0px;
+	}
 
 }
-@media only screen(max-device-width: 600px) {
 
 
-}
-@media only screen(min-device-width: 600px; max-device-width: 992px) {
-
-}
