@@ -83,7 +83,7 @@ a:focus {
 #gray-background-three {
 	-webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
-	background:linear-gradient(to top, #082341, #05212d) ;
+	background:linear-gradient(to right, #082341, #05212d) ;
 	z-index: -30;
 }
 
