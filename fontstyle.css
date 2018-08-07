@@ -272,6 +272,11 @@ a:link {
 	grid-column: 2/20;
 	margin-bottom: 15px;
 	margin-top: 15px;
+
+#html {
+	grid-row: 5/13;
+	grid-column: 2/20;
+	margin-bottom: 5px;
 	background-color: white;
 	color: black;
 	text-align: center;
@@ -285,6 +290,14 @@ a:link {
 #columns {
 	columns: 2;
 }
+
+
+
+#happy {
+	columns: 2;
+}
+
+
 
 #fonthelp {
 	grid-row: 4/13;
