@@ -1,6 +1,10 @@
 body {
 	margin: 0px;
 	padding: 0px;
+	overflow-x: none;
+	overflow-y: none;
+	width: 100%;
+	overflow: none;
 }
 
 a:focus {
