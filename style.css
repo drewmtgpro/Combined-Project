@@ -409,6 +409,14 @@ button {
     visibility: hidden;
 }
 
+#homebar a {
+    text-decoration: none;
+
+}
+#homebar .toggle {
+    padding: 1em;
+    color: black;
+}
 
 
 
@@ -447,6 +455,8 @@ button {
 	}
 	.dropdown {
 		background: black;
+		height: 25px;
+		width: 100%
 	}
 	 .not-active div {
 		visibility: hidden;
@@ -511,68 +521,65 @@ button {
         visibility: visible;
 
     }
-    #homebar .home {
-        text-align: left;
-    }
+    
      .active div {
         display: block;
         visibility: visible;
     }
 
-    .home {
-    	position: static;
-    	text-align: center;	
-    	visibility: hidden;
-    	z-index: -1000000000;
-    }
-
+    
 }
 
 
 
 
 @media only screen and (min-width: 600px)and (max-width: 992px) {
-	.dropdown:hover .dropdown-content {
-		position: absolute;
-		z-index: 100000;
-	}
-
 	#homebar {
-		width: 250px;
-		margin-left: px;
+		width: 80%;
+		margin-left: 5px;
 		margin-top: 0px;
+
 		
 	}
 	.dropdown {
 		background: black;
-		width: 103.1%;
+		height: 25px;
+		width: 100%
 	}
-	.dropbtn{
-		background: inherit;
-		width: 95vw;
-		text-align: left;
-		padding-top: 0px;
+	 .not-active div {
+		visibility: hidden;
+	}
+	.dropdown .dropdown-content {
+		visibility: hidden;
+	}
+
+	.dropdown:hover .dropdown-content {
+		visibility: visible;
+		position: absolute;
+		z-index: 100000;
 	}
 
 	button {
-		font-size: 4.5vw;
+		font-size: 5vw;
+	}
+	.dropbtn {
+		background: rgba(0,0,0,.99);
+		width: 100vw;
+		text-align: left;
+		padding-top: 0px;
+
 	}
 
 	.dropdown-content {
     	display: none;
-    	position: relative;
+    	position: absolute;
     	justify-content: center;
     	background: #082341;
-    	width: 70vw;
+    	width: 50vw;
     	left: 25%;
     }
 
-    .home {
-    	position: static;
-    	padding-top: 150px;
-    	text-align: center;	
-    	visibility: hidden;
-    }
+    
 
     #picture {
     	visibility: hidden;
@@ -596,190 +603,20 @@ button {
 		margin-left: 0px;
 	}
 
-	#homebar.active .toggle {
-        background: darkslategrey;
-        color: white;
+	 .toggle {
+        background: inherit;
+        color: #cccccc;
+        visibility: visible;
+
     }
-    #homebar .home {
-        text-align: left;
-    }
-    #homebar.active div {
+    
+     .active div {
         display: block;
+        visibility: visible;
     }
 }
 /*phone screen*/
-@media only screen and (max-device-width: 600px) {
-	#homebar {
-		width: 100%;
-		margin-left: 5px;
-		margin-top: 0px;
-		
-	}
 
-	.dropdown:hover .dropdown-content {
-		position: absolute;
-		z-index: 100000;
-	}
-
-	button {
-		font-size: 5vw;
-	}
-	.dropbtn{
-		background: inherit;
-		width: 250px;
-		text-align: left;
-		padding-top: 0px;
-	}
-
-	.dropdown-content {
-    	display: none;
-    	position: relative;
-    	justify-content: center;
-    	background: #082341;
-    	width: 70vw;
-    	left: 25%;
-    }
-
-    .home {
-    	position: static;
-    	text-align: center;	
-    	visibility: hidden;
-    }
-
-    #picture {
-    	visibility: hidden;
-    }
-
-    #title2  {
-		font-family: 'Cinzel', serif;
-		font-size: 10vw;
-		font-weight: 100;
-		color: #e6e6e6;
-		z-index: 10;
-		margin-left: 0px;
-	}
-
-	#title3  {
-		font-family: 'Cinzel', serif;
-		font-size: 10vw;
-		font-weight: 100;
-		color: #e6e6e6;
-		z-index: 10;
-		margin-left: 0px;
-	}
-
-	#homebar.active .toggle {
-        background: darkslategrey;
-        color: white;
-    }
-    #homebar .home {
-        text-align: left;
-    }
-    #homebar.active div {
-        display: block;
-    }
-
-}
-
-
-
-
-
-
-
-
-#homebar .home {
-    width: 10em;
-    text-align: right;
-    padding-top: 40px;
-    color: white;
-    visibility: hidden;
-}
-#homebar a {
-    text-decoration: none;
-
-}
-#homebar .toggle {
-    padding: 1em;
-    color: black;
-}
-
-@media only screen and (min-device-width: 600px) and (max-device-width: 992px){
-    #homebar {
-		width: 100%;
-		margin-left: 5px;
-		margin-top: 0px;
-		
-	}
-
-	#homebar .dropdown {
-		text-align: right;
-	}
-
-	.dropdown:hover .dropdown-content {
-		position: absolute;
-		z-index: 100000;
-	}
-
-	button {
-		font-size: 5vw;
-	}
-	.dropbtn{
-		background: blue;
-		width: 250px;
-		text-align: left;
-		padding-top: 0px;
-	}
-
-	.dropdown-content {
-    	display: none;
-    	position: relative;
-    	justify-content: center;
-    	background: #082341;
-    	width: 70vw;
-    	left: 25%;
-    }
-
-    .home {
-    	position: relative;
-    	text-align: center;	
-    	visibility: hidden;
-    }
-
-    #picture {
-    	visibility: hidden;
-    }
-
-    #title2  {
-		font-family: 'Cinzel', serif;
-		font-size: 10vw;
-		font-weight: 100;
-		color: #e6e6e6;
-		z-index: 10;
-		margin-left: 0px;
-	}
-
-	#title3  {
-		font-family: 'Cinzel', serif;
-		font-size: 10vw;
-		font-weight: 100;
-		color: #e6e6e6;
-		z-index: 10;
-		margin-left: 0px;
-	}
-
-	#homebar.active .toggle {
-        background: darkslategrey;
-        color: white;
-    }
-    #homebar .home {
-        text-align: left;
-    }
-    #homebar.active div {
-        display: block;
-    }
-
-}
 
 @media (min-width: 992px) {
     #homebar .toggle {

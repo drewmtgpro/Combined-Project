@@ -82,27 +82,30 @@
 	grid-column: 9/13;
 }
 
-@media only screen and (max-width: 600px) {
-	#grid {
-		grid-template-columns: repeat(20, minmax(15px, 1fr));
-	}
 
+
+@media only screen and (max-device-width: 600px) {
 	#homebar {
-		grid-row: 1/2; 
-		grid-column: 20/-1;
+		grid-row: 2/3; 
+		grid-column:1/-1;
 
 		
 		grid-template-rows: repeat(5, 1fr);
 		grid-template-columns: 1fr;
 
+		align-self: left;
+		justify-content: left;
+		justify-self: left;
 		height: 50px;
 		margin-right: 5px;
 		color: #cccccc;
 		display: grid;
+		justify-items: left;
 		font-family: 'Nova Round';
 		font-size: 25px;
+		align-items: left;
+		align-content: left;
 
-		
 	}
 	#try2 {
 		grid-row: 1/-1;
@@ -123,10 +126,78 @@
 		align-self: center;
 		justify-self: flex-start;
 	}
+	.toggle {
+		grid-column: 18/20;
+		width: 100%;
+		text-align: right;
+		right: 0;
 
 
-	#discover {
-		grid-row: 6/7;
+	}
+	#homebar .active{
+		grid-row: 1/2; 
+		grid-column: 18/20;
+		align-content: flex-start;
+		
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-columns: 1fr;
+
+		height: 50px;
+		margin-right: 5px;
+		color: #cccccc;
+		display: grid;
+		font-family: 'Nova Round';
+		font-size: 25px;
+
+		
+	}
+
+	#slogan {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 992px) {
+	#homebar {
+		grid-row: 2/3; 
+		grid-column:1/-1;
+
+		
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-columns: 1fr;
+
+		align-self: left;
+		justify-content: left;
+		justify-self: left;
+		height: 50px;
+		margin-right: 5px;
+		color: #cccccc;
+		display: grid;
+		justify-items: left;
+		font-family: 'Nova Round';
+		font-size: 25px;
+		align-items: left;
+		align-content: left;
+
+	}
+	#try2 {
+		grid-row: 1/-1;
+		grid-column: 1/-1;
+		z-index: -2000;
+	}
+
+	#title2 {
+		grid-row: 3/6;
+		grid-column: 5/17;
+		align-self: center;
+		justify-self: flex-start;
+	}
+
+	#title3 {
+		grid-row: 4/7;
+		grid-column: 5/17;
+		align-self: center;
+		justify-self: flex-start;
 	}
 
 	.toggle {
@@ -157,144 +228,6 @@
 
 	#slogan {
 		font-size: 16px;
-	}
-	
-}
-
-@media only screen and (min-width: 600px)and (max-width: 992px) {
-	#homebar {
-		grid-row: 1/2; 
-		grid-column: 20/-1;
-
-		
-		grid-template-rows: repeat(5, 1fr);
-		grid-template-columns: 1fr;
-
-		align-self: left;
-		justify-content: left;
-		justify-self: left;
-		height: 50px;
-		margin-right: 5px;
-		color: #cccccc;
-		display: grid;
-		justify-items: left;
-		font-family: 'Nova Round';
-		font-size: 25px;
-		align-items: left;
-		align-content: left;
-
-	}
-	#try2 {
-		grid-row: 1/-1;
-		grid-column: 1/-1;
-		z-index: -2000;
-	}
-
-	#title2 {
-		grid-row: 3/6;
-		grid-column: 5/17;
-		align-self: center;
-		justify-self: flex-start;
-	}
-
-	#title3 {
-		grid-row: 4/7;
-		grid-column: 5/17;
-		align-self: center;
-		justify-self: flex-start;
-	}
-
-	#discover {
-		grid-row: 6/7;
-	}
-}
-
-@media only screen and (max-device-width: 600px) {
-	#homebar {
-		grid-row: 1/2; 
-		grid-column: 20/-1;
-
-		
-		grid-template-rows: repeat(5, 1fr);
-		grid-template-columns: 1fr;
-
-		align-self: left;
-		justify-content: left;
-		justify-self: left;
-		height: 50px;
-		margin-right: 5px;
-		color: #cccccc;
-		display: grid;
-		justify-items: left;
-		font-family: 'Nova Round';
-		font-size: 25px;
-		align-items: left;
-		align-content: left;
-
-	}
-	#try2 {
-		grid-row: 1/-1;
-		grid-column: 1/-1;
-		z-index: -2000;
-	}
-
-	#title2 {
-		grid-row: 3/6;
-		grid-column: 5/17;
-		align-self: center;
-		justify-self: flex-start;
-	}
-
-	#title3 {
-		grid-row: 4/7;
-		grid-column: 5/17;
-		align-self: center;
-		justify-self: flex-start;
-	}
-
-}
-
-@media only screen and (min-device-width: 600px) and (max-device-width: 992px) {
-	#homebar {
-		grid-row: 1/1; 
-		grid-column: 20/-1;
-
-		
-		grid-template-rows: repeat(5, 1fr);
-		grid-template-columns: 1fr;
-
-		align-self:center;
-		justify-content:center;
-		justify-self:center;
-		height: 50px;
-		margin-right: 5px;
-		color: #cccccc;
-		display: grid;
-		justify-items:center;
-		font-family: 'Nova Round';
-		font-size: 25px;
-		align-items:center;
-		align-content:center;
-
-	}
-	#try2 {
-		grid-row: 1/-1;
-		grid-column: 1/-1;
-		z-index: -2000;
-	}
-
-	#title2 {
-		grid-row: 3/6;
-		grid-column: 5/17;
-		align-self: center;
-		justify-self: flex-start;
-	}
-
-	#title3 {
-		grid-row: 4/7;
-		grid-column: 5/17;
-		align-self: center;
-		justify-self: flex-start;
 	}
 
 }
