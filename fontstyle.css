@@ -507,6 +507,17 @@ a:focus {
 		padding: 3px;
 		font-size: 20px;
 		font-family: 'Poppins';
+		width: 100%;
+	}
+
+	#html {
+		grid-row: 3/16;
+		width: 100%;
+	}
+
+	#happy {
+		columns: 1;
+		font-size: 16px;
 	}
 
 	.scss {
