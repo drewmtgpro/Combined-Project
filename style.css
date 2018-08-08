@@ -124,7 +124,6 @@ i {
 	justify-self: right;
 	height: 50px;
 	margin-right: 5px;
-	margin-bottom: 60px;
 	color: #cccccc;
 	display: grid;
 	grid-template-columns: repeat(6, minmax(100px, 225px));
@@ -448,10 +447,8 @@ button {
 @media only screen and (max-width: 600px) {
 	#homebar {
 		width: 80%;
-		margin-left: 5px;
 		margin-top: 0px;
-
-		
+		margin-bottom: 50px;
 	}
 	.dropdown {
 		background: black;
@@ -536,10 +533,8 @@ button {
 @media only screen and (min-width: 600px)and (max-width: 992px) {
 	#homebar {
 		width: 80%;
-		margin-left: 5px;
 		margin-top: 0px;
-
-		
+		margin-bottom: 50px;
 	}
 	.dropdown {
 		background: black;
