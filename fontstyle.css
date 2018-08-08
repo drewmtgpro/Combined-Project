@@ -287,7 +287,8 @@ a:link {
 #html {
 	grid-row: 4/13;
 	grid-column: 2/20;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
+	margin-top: 15px;
 	background-color: white;
 	color: black;
 	text-align: center;
