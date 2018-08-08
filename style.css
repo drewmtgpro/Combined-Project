@@ -83,7 +83,7 @@ a:focus {
 #gray-background-three {
 	-webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
-	background:linear-gradient(to top, #082341, #05212d) ;
+	background:linear-gradient(to right, #082341, #05212d) ;
 	z-index: -30;
 }
 
@@ -119,16 +119,16 @@ i {
 }
 
 #homebar {
-	
+	align-items: center;
+	align-self: center;
 	justify-self: right;
-	margin-top: 40px;
 	height: 50px;
 	margin-right: 5px;
+	margin-bottom: 60px;
 	color: #cccccc;
 	display: grid;
 	grid-template-columns: repeat(6, minmax(100px, 225px));
 	grid-template-rows: 1fr;
-	
 	font-family: 'Nova Round';
 	font-size: 25px;
 	

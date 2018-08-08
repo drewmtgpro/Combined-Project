@@ -74,7 +74,7 @@
 
 #homebar {
 	grid-row: 1/2; 
-	grid-column: 20/21;
+	grid-column: 7/21;
 }
 
 #discover {
@@ -83,6 +83,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+	#grid {
+		grid-template-columns: repeat(20, minmax(15px, 1fr));
+	}
+
 	#homebar {
 		grid-row: 1/2; 
 		grid-column: 20/-1;
@@ -120,10 +124,6 @@
 		justify-self: flex-start;
 	}
 
-	#grid {
-		grid-template-columns: repeat(20,1fr);
-		grid-template-rows: repeat(12, 100px);
-	}
 
 	#discover {
 		grid-row: 6/7;
@@ -153,6 +153,10 @@
 		font-size: 25px;
 
 		
+	}
+
+	#slogan {
+		font-size: 16px;
 	}
 	
 }
